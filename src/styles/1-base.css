@@ -1,0 +1,101 @@
+/* ===========================
+   BASE.CSS - Opción 6: Violeta Premium con Rosa Radiante
+   =========================== */
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables CSS - Tema Oscuro (Default) */
+:root {
+  /* Colores base */
+  --ocean-dark: #1e0a3c;
+  --ocean-medium: #2d1454;
+  --ocean-light: #3f1f6b;
+  --coral-pink: #ff69b4;
+  --coral-light: #ffb3d9;
+  --foam-white: #f9f7fb;
+  
+  /* Variables de tema dinámicas */
+  --bg-primary: var(--ocean-dark);
+  --bg-secondary: var(--ocean-medium);
+  --bg-tertiary: var(--ocean-light);
+  --text-primary: #f9f7fb;
+  --text-secondary: rgba(249, 247, 251, 0.88);
+  --text-nav: #f9f7fb;
+  --text-nav-active: #ffffff;
+  --card-bg: rgba(45, 20, 84, 0.7);
+  --card-border: rgba(255, 105, 180, 0.44);
+  --shadow-color: rgba(255, 105, 180, 0.38);
+  --gradient-start: #3f1f6b;
+  --gradient-end: #1e0a3c;
+}
+
+/* Modo Claro */
+[data-theme="light"] {
+  --bg-primary: #fefcff;
+  --bg-secondary: #fbf7fe;
+  --bg-tertiary: #f5ebfb;
+  --text-primary: #2d1454;
+  --text-secondary: #3f1f6b;
+  --text-nav: #2d1454;
+  --text-nav-active: #1e0a3c;
+  --card-bg: rgba(255, 255, 255, 0.94);
+  --card-border: rgba(219, 39, 119, 0.33);
+  --shadow-color: rgba(219, 39, 119, 0.14);
+  --gradient-start: #fefcff;
+  --gradient-end: #fbf7fe;
+  --ocean-dark: #fefcff;
+  --ocean-medium: #fbf7fe;
+  --ocean-light: #f5ebfb;
+  --coral-pink: #db2777;
+  --coral-light: #ec4899;
+  --foam-white: #2d1454;
+}
+
+/* Estilos base del body */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(to bottom, var(--gradient-start) 0%, var(--gradient-end) 100%);
+  color: var(--text-primary);
+  min-height: 100vh;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, .logo {
+  font-family: "Playfair Display", serif;
+}
+
+/* Scroll margin para navegación */
+* {
+  scroll-margin-top: 80px;
+}
+
+/* WordPress compatibility */
+.has-global-padding {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.has-global-padding > .alignfull {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+:root :where(.is-layout-constrained) > * {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+/* Secciones generales */
+section {
+  position: relative;
+}

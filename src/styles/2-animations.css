@@ -1,0 +1,310 @@
+/* ===========================
+   ANIMATIONS.CSS - Animaciones y efectos
+   =========================== */
+
+/* Animaciones de entrada */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInSlow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animaciones de elementos decorativos */
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes moonGlow {
+  0%, 100% {
+    box-shadow: 0 0 60px rgba(255, 215, 0, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 100px rgba(255, 215, 0, 0.9);
+  }
+}
+/* Animación Olas */
+@keyframes wave1 {
+  0% {
+    background-position: 0 bottom;
+  }
+  100% {
+    background-position: 1440px bottom;
+  }
+}
+
+@keyframes wave2 {
+  0% {
+    background-position: 0 bottom;
+  }
+  100% {
+    background-position: -1440px bottom;
+  }
+}
+
+@keyframes wave3 {
+  0% {
+    background-position: 0 bottom;
+  }
+  100% {
+    background-position: 1440px bottom;
+  }
+}
+@keyframes wave-float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(-10deg);
+  }
+}
+
+@keyframes wave-bounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2) rotate(15deg);
+  }
+}
+
+@keyframes bubble-pop {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -150%) scale(2);
+  }
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-200px) scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes floatBubble {
+  0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-30px) translateX(20px);
+  }
+  75% {
+    transform: translateY(-60px) translateX(-20px);
+  }
+}
+
+/* Animaciones de natación */
+@keyframes swimming {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-30px) rotate(-5deg);
+  }
+}
+
+@keyframes swim {
+  0% {
+    transform: translateX(-100px) scaleX(1);
+  }
+  49% {
+    transform: translateX(calc(100vw + 100px)) scaleX(1);
+  }
+  50% {
+    transform: translateX(calc(100vw + 100px)) scaleX(-1);
+  }
+  100% {
+    transform: translateX(-100px) scaleX(-1);
+  }
+}
+
+/* Animaciones de timeline */
+@keyframes flowDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 30px var(--coral-pink), 0 0 60px rgba(255, 107, 157, 0.3);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px var(--coral-pink), 0 0 80px rgba(255, 107, 157, 0.5);
+  }
+}
+
+@keyframes ringExpand {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+/* Animaciones de iconos */
+@keyframes iconFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Animaciones de profundidad */
+@keyframes photoFloat {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+    border-radius: 30px;
+  }
+  25% {
+    transform: translateY(-10px) rotate(-2deg);
+    border-radius: 35% 25% 30% 35%;
+  }
+  50% {
+    transform: translateY(0) rotate(0deg);
+    border-radius: 25% 35% 35% 25%;
+  }
+  75% {
+    transform: translateY(-10px) rotate(2deg);
+    border-radius: 30% 30% 40% 30%;
+  }
+}
+
+@keyframes borderGlow {
+  0% {
+    opacity: 0.7;
+    filter: blur(15px);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(25px);
+  }
+}
+
+
+@keyframes glow {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.2);
+  }
+}
+
+/* Animación de bounce para scroll indicator */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-20px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+}
+
+/* Clases de animación reutilizables */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

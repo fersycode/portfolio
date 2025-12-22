@@ -1,0 +1,247 @@
+/* ===========================
+   THEMES.CSS - Ajustes de tema claro/oscuro
+   =========================== */
+
+/* ========== MODO CLARO - AJUSTES GENERALES ========== */
+
+/* Body y backgrounds principales */
+[data-theme="light"] body {
+  color: #0c4a6e;
+}
+
+/* Secciones principales */
+[data-theme="light"] #hero {
+  background: linear-gradient(to bottom, #f0f9ff 0%, #e0f2fe 50%, #bae6fd 100%);
+}
+
+[data-theme="light"] #contact {
+  background: linear-gradient(to bottom, #64748b 0%, #475569 100%);
+}
+
+/* Cards y elementos de contenido */
+[data-theme="light"] .timeline-card,
+[data-theme="light"] .skill-category,
+[data-theme="light"] .portfolio-card,
+[data-theme="light"] .expertise-card,
+[data-theme="light"] .mode-card {
+  background: var(--card-bg);
+  border: 2px solid var(--card-border);
+  color: var(--text-primary);
+}
+
+/* Títulos en cards */
+[data-theme="light"] .timeline-card h3,
+[data-theme="light"] .skill-category h3,
+[data-theme="light"] .portfolio-info h3,
+[data-theme="light"] .expertise-card h3,
+[data-theme="light"] .mode-card h4 {
+  color: var(--coral-pink);
+}
+
+/* Iconos y elementos de acento */
+[data-theme="light"] .timeline-card .company,
+[data-theme="light"] .skill-category .category-icon,
+[data-theme="light"] .expertise-card .expertise-icon,
+[data-theme="light"] .mode-card .mode-icon {
+  color: var(--coral-pink);
+}
+
+/* Timeline específico */
+[data-theme="light"] .timeline::before {
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--coral-pink) 10%,
+    var(--coral-light) 50%,
+    var(--coral-pink) 90%,
+    transparent
+  );
+}
+
+[data-theme="light"] .timeline-item::before {
+  background: linear-gradient(135deg, var(--coral-pink), var(--coral-light));
+  box-shadow: 0 0 30px var(--coral-pink), 0 0 60px rgba(225, 29, 72, 0.3);
+}
+
+[data-theme="light"] .timeline-item::after {
+  border: 2px solid var(--coral-pink);
+}
+
+/* Subtítulos y textos secundarios */
+[data-theme="light"] .section-subtitle,
+[data-theme="light"] .portfolio-subtitle,
+[data-theme="light"] .contact-subtitle {
+  color: var(--text-secondary);
+}
+
+[data-theme="light"] .period,
+[data-theme="light"] .location-note,
+[data-theme="light"] .timezone {
+  color: var(--text-secondary);
+}
+
+/* ========== TRANSICIONES SUAVES ENTRE TEMAS ========== */
+
+/* Elementos que deben animarse al cambiar tema */
+body,
+.timeline-card,
+.skill-category,
+.portfolio-card,
+.expertise-card,
+.mode-card,
+.contact-info,
+.contact-form-container,
+.form-group input,
+.form-group select,
+.form-group textarea,
+.ocean-footer {
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* ========== AJUSTES PARA ANIMACIONES EN AMBOS TEMAS ========== */
+
+/* Delays progresivos para efectos cascada */
+.about-text,
+.timeline-card,
+.skill-category,
+.portfolio-card,
+.pricing-card,
+.contact-info,
+.contact-form-container {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.about-text:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.about-text:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+/* Elementos decorativos con fade-in suave */
+.floating-bubbles,
+.deep-particles,
+.abyss-creatures,
+.bioluminescence {
+  opacity: 0;
+  animation: fadeInSlow 2s ease forwards;
+}
+
+/* ========== MODO OSCURO EXPLÍCITO ========== */
+/* (Para casos donde necesites especificar dark theme) */
+
+[data-theme="dark"] body {
+  background: linear-gradient(to bottom, #2d4a6f 0%, #1a3a5a 100%);
+  color: var(--foam-white);
+}
+
+[data-theme="dark"] .nav-links a {
+  color: var(--text-nav);
+}
+
+/* ========== ACCESIBILIDAD ========== */
+
+/* Mejora de contraste para textos importantes en modo claro */
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] h4 {
+  color: inherit;
+}
+
+/* Asegurar que los botones sean accesibles en ambos temas */
+.cta-button,
+.btn-view,
+.btn-download {
+  background: linear-gradient(135deg, var(--coral-pink), var(--coral-light));
+  color: white;
+  border: none;
+}
+
+.cta-button.secondary,
+.btn-link {
+  background: transparent;
+  color: var(--coral-pink);
+  border: 2px solid var(--coral-pink);
+}
+
+/* Hover states consistentes */
+.cta-button:hover,
+.btn-view:hover,
+.btn-download:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(255, 107, 157, 0.5);
+}
+
+.cta-button.secondary:hover,
+.btn-link:hover {
+  background: rgba(225, 29, 72, 0.1);
+}
+
+/* ========== PREFERENCIAS DE MOVIMIENTO REDUCIDO ========== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ========== MODO ALTO CONTRASTE ========== */
+
+@media (prefers-contrast: high) {
+  :root {
+    --card-border: rgba(255, 107, 157, 0.8);
+    --shadow-color: rgba(255, 107, 157, 0.6);
+  }
+
+  [data-theme="light"] {
+    --card-border: rgba(225, 29, 72, 0.8);
+  }
+
+  .nav-links a,
+  .timeline-card,
+  .skill-category,
+  .portfolio-card,
+  .expertise-card,
+  .mode-card {
+    border-width: 3px;
+  }
+}
+
+/* ========== IMPRESIÓN ========== */
+
+@media print {
+  /* Ocultar elementos no necesarios para impresión */
+  nav,
+  .fab-container,
+  .side-menu,
+  .mobile-menu-btn,
+  .nav-theme-toggle,
+  .floating-bubbles,
+  .deep-particles,
+  .abyss-creatures,
+  .bioluminescence,
+  .stars,
+  .moon,
+  .waves {
+    display: none !important;
+  }
+
+  .timeline-card,
+  .skill-category,
+  .portfolio-card,
+  .expertise-card,
+  .mode-card {
+    background: white !important;
+    border: 2px solid var(--coral-light) !important;
+    break-inside: avoid;
+  }
+
+}
