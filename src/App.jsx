@@ -26,7 +26,7 @@ function App() {
           <Navbar />
           <SideMenuTrigger />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/portfolio" element={<Home />} />
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/project/:slug" element={<ProjectDetail />} />
           </Routes>

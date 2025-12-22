@@ -28,7 +28,7 @@ const Navbar = () => {
   return (
     <nav id="navbar" className={scrolled ? "scrolled" : ""}>
       <div className="nav-container">
-        <Link to="/" className="logo">
+        <Link to="/portfolio" className="logo">
           F.M.
         </Link>
 
