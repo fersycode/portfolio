@@ -11,28 +11,56 @@ export const translations = {
     nav_contact: "Contacto",
 
     // Hero Section
-    hero_title: "Fersy S. Martínez R.",
-    hero_subtitle: "Full Stack Developer & UI/UX Designer",
-    hero_cta: "Ver Portfolio",
-
+    hero_available: "Disponible para proyectos",
+    hero_title: "Creando Experiencias Digitales",
+    hero_subtitle: "Diseño & Desarrollo Web",
     // About Section
-    about_title: "Sobre Mí",
-    about_subtitle: "Conoce a la persona detrás del código",
-    about_greeting: "¡Hola!",
-    about_role: "Full Stack Developer & UI/UX Designer",
-    about_creating:"Creando experiencias digitales desde Honduras",
+    about_tag: "Sobre Mí",
+    about_title: "Desarrolladora Full Stack",
+    about_subtitle:
+      "Apasionada por crear soluciones digitales innovadoras que impulsan el éxito empresarial",
+
+    // Personal Info
+    about_role: "Desarrolladora Full Stack",
     about_description1:
-      "Soy una desarrolladora apasionada con más de 4 años transformando ideas en experiencias digitales excepcionales. Me especializo en crear soluciones web escalables y diseños que no solo se ven bien, sino que resuelven problemas reales.",
+      "Soy una desarrolladora especializado en crear experiencias digitales modernas y funcionales. Con más de 5 años de experiencia, he trabajado con empresas de diversos sectores ayudándolas a alcanzar sus objetivos mediante soluciones tecnológicas innovadoras.",
     about_description2:
-      "Mi enfoque combina pensamiento técnico con creatividad visual. Disfruto cada etapa del proceso: desde el diseño inicial en Figma hasta ver el código cobrar vida en producción. Para mí, cada proyecto es una oportunidad de aprender algo nuevo y superar los límites de lo posible.",
-    about_fact1_title: "Ingeniera en Sistemas",
-    about_fact1_subtitle: "UNAH (2017-2023)",
-    about_fact2_title: "+4 años de experiencia",
-    about_fact2_subtitle: "en desarrollo web",
-    about_fact3_title: "Tegucigalpa, Honduras",
-    about_fact3_subtitle: "100% Remoto",
-    about_fact4_title: "Apasionada por UI/UX",
-    about_fact4_subtitle: "y tecnologías modernas",
+      "Mi enfoque se centra en escribir código limpio, escalable y mantenible, siempre buscando las mejores prácticas y las tecnologías más actuales para entregar productos de alta calidad que superen las expectativas del cliente.",
+
+    // Stats
+    about_stat_projects: "Proyectos Completados",
+    about_stat_years: "Años de Experiencia",
+    about_stat_clients: "Clientes Satisfechos",
+    about_stat_satisfaction: "Tasa de Satisfacción",
+
+    // Info Items
+    about_education: "Educación",
+    about_education_value: "Ingeniería en Sistemas",
+    about_experience: "Experiencia",
+    about_experience_value: "5+ Años",
+    about_location: "Ubicación",
+    about_location_value: "Tegucigalpa, Honduras",
+    about_passion: "Especialización",
+    about_passion_value: "Frontend & Backend",
+
+    // CTA Buttons
+    about_cta_contact: "Contactar",
+    about_cta_download: "Descargar CV",
+
+    // Highlights
+    about_highlights_title: "¿Por qué trabajar conmigo?",
+    about_highlight1_title: "Código de Calidad",
+    about_highlight1_desc:
+      "Desarrollo con las mejores prácticas, código limpio y documentado para facilitar el mantenimiento.",
+    about_highlight2_title: "Entrega Rápida",
+    about_highlight2_desc:
+      "Gestión ágil de proyectos con entregas puntuales y comunicación constante.",
+    about_highlight3_title: "Enfoque Colaborativo",
+    about_highlight3_desc:
+      "Trabajo en equipo efectivo, adaptándome a metodologías y culturas organizacionales.",
+    about_highlight4_title: "Resultados Medibles",
+    about_highlight4_desc:
+      "Enfoque orientado a objetivos con métricas claras y resultados demostrables.",
     about_gallery_title: "Mi Mundo Creativo",
     about_gallery_subtitle:
       "Un vistazo a mi vida entre el código, el diseño y la creatividad",
@@ -219,28 +247,57 @@ export const translations = {
     nav_contact: "Contact",
 
     // Hero Section
-    hero_title: "Fersy S. Martínez R.",
-    hero_subtitle: "Full Stack Developer & UI/UX Designer",
-    hero_cta: "View Portfolio",
+    hero_available: "Available for projects",
+    hero_title: "Creating Digital Experiences",
+    hero_subtitle: "Design & Web Development",
 
     // About Section
-    about_title: "About Me",
-    about_subtitle: "Meet the person behind the code",
-    about_greeting: "Hello!",
-    about_role: "Full Stack Developer & UI/UX Designer",
-    about_creating:"Creating digital experiences from Honduras",
+    about_tag: "About Me",
+    about_title: "Full Stack Developer",
+    about_subtitle:
+      "Passionate about creating innovative digital solutions that drive business success",
+
+    // Personal Info
+    about_role: "Full Stack Developer",
     about_description1:
-      "I'm a passionate developer with over 4 years transforming ideas into exceptional digital experiences. I specialize in creating scalable web solutions and designs that not only look good but solve real problems.",
+      "I'm a full stack developer specialized in creating modern and functional digital experiences. With over 5 years of experience, I've worked with companies across various sectors helping them achieve their goals through innovative technological solutions.",
     about_description2:
-      "My approach combines technical thinking with visual creativity. I enjoy every stage of the process: from initial design in Figma to seeing code come to life in production. For me, every project is an opportunity to learn something new and push boundaries.",
-    about_fact1_title: "Systems Engineer",
-    about_fact1_subtitle: "UNAH (2017-2023)",
-    about_fact2_title: "+4 years experience",
-    about_fact2_subtitle: "in web development",
-    about_fact3_title: "Tegucigalpa, Honduras",
-    about_fact3_subtitle: "100% Remote",
-    about_fact4_title: "Passionate about UI/UX",
-    about_fact4_subtitle: "and modern technologies",
+      "My approach focuses on writing clean, scalable, and maintainable code, always seeking best practices and current technologies to deliver high-quality products that exceed client expectations.",
+
+    // Stats
+    about_stat_projects: "Completed Projects",
+    about_stat_years: "Years of Experience",
+    about_stat_clients: "Satisfied Clients",
+    about_stat_satisfaction: "Satisfaction Rate",
+
+    // Info Items
+    about_education: "Education",
+    about_education_value: "Systems Engineering",
+    about_experience: "Experience",
+    about_experience_value: "5+ Years",
+    about_location: "Location",
+    about_location_value: "Tegucigalpa, Honduras",
+    about_passion: "Specialization",
+    about_passion_value: "Frontend & Backend",
+
+    // CTA Buttons
+    about_cta_contact: "Contact Me",
+    about_cta_download: "Download CV",
+
+    // Highlights
+    about_highlights_title: "Why Work With Me?",
+    about_highlight1_title: "Quality Code",
+    about_highlight1_desc:
+      "Development with best practices, clean and documented code for easy maintenance.",
+    about_highlight2_title: "Fast Delivery",
+    about_highlight2_desc:
+      "Agile project management with timely deliveries and constant communication.",
+    about_highlight3_title: "Collaborative Approach",
+    about_highlight3_desc:
+      "Effective teamwork, adapting to methodologies and organizational cultures.",
+    about_highlight4_title: "Measurable Results",
+    about_highlight4_desc:
+      "Goal-oriented approach with clear metrics and demonstrable results.",
     about_gallery_title: "My Creative World",
     about_gallery_subtitle:
       "A glimpse into my life between code, design and creativity",

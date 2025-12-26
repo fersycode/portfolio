@@ -1,12 +1,11 @@
 // src/components/SideMenu/SideMenuTrigger.jsx
 import { useState, useEffect } from "react";
 import { useLanguage } from "../../context/LanguageContext";
-
+import { downloadCV } from "../../helpers";
 const SideMenuTrigger = () => {
   const { t } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
 
-  // Cerrar con ESC
   useEffect(() => {
     const handleEscape = (e) => {
       if (e.key === "Escape" && isOpen) {
@@ -18,7 +17,6 @@ const SideMenuTrigger = () => {
     return () => document.removeEventListener("keydown", handleEscape);
   }, [isOpen]);
 
-  // Prevenir scroll cuando está abierto
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -29,10 +27,6 @@ const SideMenuTrigger = () => {
       document.body.style.overflow = "";
     };
   }, [isOpen]);
-
-  const downloadCV = () => {
-    window.open("cv.pdf", "_blank");
-  };
 
   return (
     <>
@@ -67,7 +61,7 @@ const SideMenuTrigger = () => {
             </h4>
             <div className="side-menu-links">
               <a
-                href="https://www.linkedin.com/in/tu-perfil"
+                href="https://www.linkedin.com/in/fersy-mart%C3%ADnez-b49b11262/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="side-menu-link"
@@ -81,7 +75,7 @@ const SideMenuTrigger = () => {
                 </div>
               </a>
               <a
-                href="https://github.com/tu-usuario"
+                href="https://github.com/fersycode"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="side-menu-link"
@@ -91,34 +85,6 @@ const SideMenuTrigger = () => {
                   <span className="side-menu-link-label">GitHub</span>
                   <span className="side-menu-link-value">
                     {t("side_menu_github")}
-                  </span>
-                </div>
-              </a>
-              <a
-                href="https://www.behance.net/tu-perfil"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="side-menu-link"
-              >
-                <i className="fab fa-behance"></i>
-                <div className="side-menu-link-text">
-                  <span className="side-menu-link-label">Behance</span>
-                  <span className="side-menu-link-value">
-                    {t("side_menu_behance")}
-                  </span>
-                </div>
-              </a>
-              <a
-                href="https://www.instagram.com/tu-usuario"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="side-menu-link"
-              >
-                <i className="fab fa-instagram"></i>
-                <div className="side-menu-link-text">
-                  <span className="side-menu-link-label">Instagram</span>
-                  <span className="side-menu-link-value">
-                    {t("side_menu_instagram")}
                   </span>
                 </div>
               </a>

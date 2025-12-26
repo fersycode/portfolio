@@ -124,15 +124,15 @@ const ProjectDetail = () => {
       </section>
 
       <nav className="project-navigation">
-        <Link to={project.prevProject || '#'} className="nav-project prev">
+        <Link to={"/portfolio/" + project.prevProject || '#'} className="nav-project prev">
           <i className="fas fa-arrow-left"></i>
           <span>{t('project_prev')}</span>
         </Link>
-        <Link to="/projects" className="nav-project all">
+        <Link to="/portfolio/projects" className="nav-project all">
           <i className="fas fa-th"></i>
           <span>{t('project_all')}</span>
         </Link>
-        <Link to={project.nextProject || '#'} className="nav-project next">
+        <Link to={"/portfolio/" + project.nextProject || '#'} className="nav-project next">
           <span>{t('project_next')}</span>
           <i className="fas fa-arrow-right"></i>
         </Link>

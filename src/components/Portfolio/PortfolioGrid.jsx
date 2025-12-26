@@ -138,7 +138,7 @@ const PortfolioGrid = () => {
 
         <div className="portfolio-cta">
           <p>{t("portfolio_cta_text")}</p>
-          <Link to="/projects" className="cta-button">
+          <Link to="/portfolio/projects" className="cta-button">
             {t("portfolio_cta_button")}
           </Link>
         </div>

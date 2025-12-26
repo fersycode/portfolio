@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { useTheme } from "../../context/ThemeContext";
 import { useLanguage } from "../../context/LanguageContext";
 import LanguageSwitcher from "./LanguageSwitcher";
 import ThemeToggle from "./ThemeToggle";
-
+import logo from '/fm-icon.png';
 const Navbar = () => {
   const { t } = useLanguage();
   const [scrolled, setScrolled] = useState(false);
@@ -28,8 +27,8 @@ const Navbar = () => {
   return (
     <nav id="navbar" className={scrolled ? "scrolled" : ""}>
       <div className="nav-container">
-        <Link to="/portfolio" className="logo">
-          F.M.
+        <Link to="/portfolio/" className="logo">
+           <img src={logo} alt="fersy_logo" />
         </Link>
 
         <button
@@ -44,7 +43,7 @@ const Navbar = () => {
         <ul className={`nav-links ${mobileOpen ? "active" : ""}`}>
           {navItems.map((item) => (
             <li key={item.key}>
-              <a href={item.href} onClick={() => setMobileOpen(false)}>
+              <a href={"/portfolio/"+item.href} onClick={() => setMobileOpen(false)}>
                 <i className={`fas ${item.icon}`}></i>
                 <span>{t(item.key)}</span>
               </a>

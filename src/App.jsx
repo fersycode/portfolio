@@ -26,9 +26,9 @@ function App() {
           <Navbar />
           <SideMenuTrigger />
           <Routes>
-            <Route path="/portfolio" element={<Home />} />
-            <Route path="/projects" element={<ProjectsPage />} />
-            <Route path="/project/:slug" element={<ProjectDetail />} />
+            <Route path="/portfolio/" element={<Home />} />
+            <Route path="/portfolio/projects" element={<ProjectsPage />} />
+            <Route path="/portfolio/project/:slug" element={<ProjectDetail />} />
           </Routes>
         </BrowserRouter>
       </LanguageProvider>

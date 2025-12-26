@@ -184,7 +184,7 @@ const ProjectsPage = () => {
 
                     <div className="project-full-actions">
                       <Link
-                        to={`/project/${project.slug}`}
+                        to={`/portfolio/project/${project.slug}`}
                         className="btn-primary"
                       >
                         <i className="fas fa-arrow-right"></i>{" "}
