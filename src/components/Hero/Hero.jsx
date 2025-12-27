@@ -70,7 +70,7 @@ const Hero = () => {
           {/* CTA Button */}
           <div className="hero-cta-wrapper">
             <button className="hero-cta-button">
-              <Link to="/portfolio/projects" className="hero-cta-text">
+              <Link to="/projects" className="hero-cta-text">
                 {t("portfolio_cta_button")}
               </Link>
               <div className="hero-cta-overlay" />

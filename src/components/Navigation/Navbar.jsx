@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <nav id="navbar" className={scrolled ? "scrolled" : ""}>
       <div className="nav-container">
-        <Link to="/portfolio/" className="logo">
+        <Link to="/" className="logo">
            <img src={logo} alt="fersy_logo" />
         </Link>
 
@@ -43,7 +43,7 @@ const Navbar = () => {
         <ul className={`nav-links ${mobileOpen ? "active" : ""}`}>
           {navItems.map((item) => (
             <li key={item.key}>
-              <a href={"/portfolio/"+item.href} onClick={() => setMobileOpen(false)}>
+              <a href={item.href} onClick={() => setMobileOpen(false)}>
                 <i className={`fas ${item.icon}`}></i>
                 <span>{t(item.key)}</span>
               </a>
