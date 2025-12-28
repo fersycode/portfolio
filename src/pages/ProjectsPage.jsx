@@ -145,6 +145,13 @@ const ProjectsPage = () => {
               {filteredProjects.map((project) => (
                 <article className="project-full-card" key={project.id}>
                   <div className="project-full-image">
+                    {project.images && project.images.main && (
+                      <img
+                        src={project.images.main}
+                        alt={getText(project.title)}
+                        loading="lazy"
+                      />
+                    )}
                     <div className="project-full-overlay">
                       <div className="project-tags-wrapper">
                         {project.tags.map((tag, idx) => (

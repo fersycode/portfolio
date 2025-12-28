@@ -220,6 +220,11 @@ export const translations = {
     project_prev: "Proyecto anterior",
     project_all: "Todos los proyectos",
     project_next: "Siguiente proyecto",
+    project_related_code: "Código Relacionado",
+    project_gallery: "Galería",
+    project_preview: "Vista Previa",
+    project_videos: "Videos",
+    coming_soon: "Próximamente",
 
     // Footer
     footer_copyright: "Todos los derechos reservados.",
@@ -457,6 +462,11 @@ export const translations = {
     project_prev: "Previous project",
     project_all: "All projects",
     project_next: "Next project",
+    project_related_code: "Related Code",
+    project_gallery: "Gallery",
+    project_preview: "Preview",
+    project_videos: "Videos",
+    coming_soon: "Coming Soon",
 
     // Footer
     footer_copyright: "All rights reserved.",

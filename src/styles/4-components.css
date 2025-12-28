@@ -180,8 +180,8 @@
 [data-theme="light"] .project-tag,
 [data-theme="light"] .tech-tag {
   background: rgba(225, 29, 72, 0.15);
-  border: 1px solid var(--coral-pink);
-  color: var(--coral-pink);
+  border: 1px solid var(--coral-light);
+  color: var(--ocean-dark);
 }
 
 [data-theme="light"] .tech-tag {
