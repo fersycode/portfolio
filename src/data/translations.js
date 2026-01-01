@@ -239,6 +239,56 @@ export const translations = {
     projects_clear_filters: "Limpiar Filtros",
     projects_no_results_desc:
       "Intenta ajustar tus filtros para ver más proyectos",
+
+    // Booking Page
+    booking_title: "Agenda una Reunión",
+    booking_subtitle:
+      "¿Tienes un proyecto en mente? Reserva una llamada y conversemos sobre cómo puedo ayudarte.",
+
+    booking_how_it_works: "¿Cómo Funciona?",
+
+    booking_step1_title: "1. Selecciona tu Horario",
+    booking_step1_desc:
+      "Elige la fecha y hora que mejor se adapte a tu disponibilidad.",
+
+    booking_step2_title: "2. Comparte tu Proyecto",
+    booking_step2_desc:
+      "Cuéntame brevemente sobre tu proyecto o necesidades en el formulario.",
+
+    booking_step3_title: "3. Reviso tu Propuesta",
+    booking_step3_desc:
+      "Evaluaré tu proyecto y te confirmaré si puedo ayudarte.",
+
+    booking_step4_title: "4. Nos Reunimos",
+    booking_step4_desc:
+      "Si hay un match, nos conectamos en la fecha acordada para discutir detalles.",
+
+    booking_services_title: "Tipos de Reuniones Disponibles",
+
+    booking_service1_title: "Consulta Inicial",
+    booking_service1_desc:
+      "Una charla breve para conocer tu proyecto y ver si puedo ayudarte.",
+
+    booking_service2_title: "Reunión Técnica",
+    booking_service2_desc:
+      "Discusión detallada sobre requisitos técnicos y alcance del proyecto.",
+
+    booking_service3_title: "Propuesta de Proyecto",
+    booking_service3_desc:
+      "Presentación formal de propuesta, timeline y presupuesto.",
+
+    booking_calendar_title: "Selecciona tu Horario Preferido",
+    booking_calendar_note: "Todos los horarios están en tu zona horaria local",
+
+    booking_disclaimer:
+      "Nota: La reunión se confirmará solo después de revisar tu propuesta. Recibirás un email de confirmación o alternativas si no hay disponibilidad.",
+
+    booking_prefer_email: "¿Prefieres Escribir Primero?",
+    booking_email_text:
+      "Si prefieres enviar un mensaje antes de agendar, puedes contactarme directamente.",
+    booking_contact_button: "Enviar Mensaje",
+
+    nav_booking: "Agendar",
   },
 
   en: {
@@ -480,6 +530,55 @@ export const translations = {
     projects_stat_showing: "Showing Now",
     projects_clear_filters: "Clear Filters",
     projects_no_results_desc: "Try adjusting your filters to see more projects",
+    // Booking Page
+    booking_title: "Schedule a Meeting",
+    booking_subtitle:
+      "Have a project in mind? Book a call and let's talk about how I can help you.",
+
+    booking_how_it_works: "How It Works?",
+
+    booking_step1_title: "1. Select Your Time",
+    booking_step1_desc:
+      "Choose the date and time that works best for your schedule.",
+
+    booking_step2_title: "2. Share Your Project",
+    booking_step2_desc:
+      "Tell me briefly about your project or needs in the form.",
+
+    booking_step3_title: "3. I Review Your Proposal",
+    booking_step3_desc:
+      "I'll evaluate your project and confirm if I can help you.",
+
+    booking_step4_title: "4. We Meet",
+    booking_step4_desc:
+      "If there's a match, we'll connect on the agreed date to discuss details.",
+
+    booking_services_title: "Available Meeting Types",
+
+    booking_service1_title: "Initial Consultation",
+    booking_service1_desc:
+      "A brief chat to learn about your project and see if I can help.",
+
+    booking_service2_title: "Technical Meeting",
+    booking_service2_desc:
+      "Detailed discussion about technical requirements and project scope.",
+
+    booking_service3_title: "Project Proposal",
+    booking_service3_desc:
+      "Formal presentation of proposal, timeline, and budget.",
+
+    booking_calendar_title: "Select Your Preferred Time",
+    booking_calendar_note: "All times are in your local timezone",
+
+    booking_disclaimer:
+      "Note: The meeting will be confirmed only after reviewing your proposal. You'll receive a confirmation email or alternatives if there's no availability.",
+
+    booking_prefer_email: "Prefer to Write First?",
+    booking_email_text:
+      "If you prefer to send a message before scheduling, you can contact me directly.",
+    booking_contact_button: "Send Message",
+
+    nav_booking: "Book",
   },
 };
 

@@ -168,6 +168,9 @@ const ProjectDetail = () => {
                         title={getText(video.title)}
                         frameBorder="0"
                         allowFullScreen
+                        sandbox="allow-scripts allow-same-origin"
+                        loading="lazy"
+                        style="width: 100%; height: 500px; border: none;"
                       />
                     </div>
                   ))}

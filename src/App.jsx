@@ -2,10 +2,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "./context/ThemeContext";
 import { LanguageProvider } from "./context/LanguageContext";
 import Navbar from "./components/Navigation/Navbar";
-import SideMenuTrigger from './components/SideMenu/SideMenuTrigger';
+import SideMenuTrigger from "./components/SideMenu/SideMenuTrigger";
 import Home from "./pages/Home";
 import ProjectDetail from "./pages/ProjectDetail";
 import ProjectsPage from "./pages/ProjectsPage";
+import BookingPage from "./pages/BookingPage";
 import "./styles/1-base.css";
 import "./styles/2-animations.css";
 import "./styles/3-navigation.css";
@@ -17,6 +18,7 @@ import "./styles/8-themes.css";
 import "./styles/9-language-switcher.css";
 import "./styles/project.css";
 import "./styles/projects-page.css";
+import "./styles/booking-page.css";
 
 function App() {
   return (
@@ -29,6 +31,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/project/:slug" element={<ProjectDetail />} />
+            <Route path="/booking" element={<BookingPage />} />
           </Routes>
         </BrowserRouter>
       </LanguageProvider>

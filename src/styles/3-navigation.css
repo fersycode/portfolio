@@ -75,6 +75,7 @@ nav.scrolled .nav-container {
   position: relative;
   overflow: hidden;
   font-size: 14px;
+  box-shadow: 0 3px 10px var(--shadow-color);
 }
 
 .nav-links a i {
@@ -89,7 +90,7 @@ nav.scrolled .nav-container {
   .nav-links a span {
     display: none;
   }
-  
+
   .nav-links a {
     padding: 10px;
     width: 40px;
@@ -111,7 +112,12 @@ nav.scrolled .nav-links a {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
   transition: left 0.6s ease;
 }
 
@@ -153,7 +159,11 @@ nav.scrolled .nav-links a {
 }
 
 .nav-links a.active {
-  background: linear-gradient(135deg, rgba(255, 107, 157, 0.3), rgba(255, 165, 192, 0.2));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 107, 157, 0.3),
+    rgba(255, 165, 192, 0.2)
+  );
   border-color: var(--coral-pink);
   box-shadow: 0 0 20px rgba(255, 107, 157, 0.3);
   font-weight: 600;
@@ -286,7 +296,7 @@ nav.scrolled .nav-links a {
   background: linear-gradient(135deg, var(--coral-pink), var(--coral-light));
 }
 
-.side-menu-trigger.active{
+.side-menu-trigger.active {
   transform: rotate(45deg);
 }
 @media (max-width: 768px) {
@@ -466,7 +476,7 @@ nav.scrolled .nav-links a {
   .side-menu {
     padding: 60px 20px 20px;
   }
-  
+
   .side-menu-overlay.active {
     cursor: pointer;
   }
@@ -484,7 +494,11 @@ nav.scrolled .nav-links a {
     width: 85%;
     max-width: 400px;
     height: 100vh;
-    background: linear-gradient(135deg, rgba(10, 22, 40, 0.98), rgba(26, 47, 79, 0.98));
+    background: linear-gradient(
+      135deg,
+      rgba(10, 22, 40, 0.98),
+      rgba(26, 47, 79, 0.98)
+    );
     backdrop-filter: blur(20px);
     flex-direction: column;
     justify-content: flex-start;
@@ -498,7 +512,6 @@ nav.scrolled .nav-links a {
     z-index: 999;
     overflow-y: auto;
   }
-
 
   .nav-links.active {
     right: 0;
@@ -516,23 +529,37 @@ nav.scrolled .nav-links a {
     opacity: 1;
   }
 
-  .nav-links.active li:nth-child(1) { transition-delay: 0.1s; }
-  .nav-links.active li:nth-child(2) { transition-delay: 0.15s; }
-  .nav-links.active li:nth-child(3) { transition-delay: 0.2s; }
-  .nav-links.active li:nth-child(4) { transition-delay: 0.25s; }
-  .nav-links.active li:nth-child(5) { transition-delay: 0.3s; }
-  .nav-links.active li:nth-child(6) { transition-delay: 0.35s; }
-  .nav-links.active li:nth-child(7) { transition-delay: 0.4s; }
+  .nav-links.active li:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+  .nav-links.active li:nth-child(2) {
+    transition-delay: 0.15s;
+  }
+  .nav-links.active li:nth-child(3) {
+    transition-delay: 0.2s;
+  }
+  .nav-links.active li:nth-child(4) {
+    transition-delay: 0.25s;
+  }
+  .nav-links.active li:nth-child(5) {
+    transition-delay: 0.3s;
+  }
+  .nav-links.active li:nth-child(6) {
+    transition-delay: 0.35s;
+  }
+  .nav-links.active li:nth-child(7) {
+    transition-delay: 0.4s;
+  }
 
   .nav-links a {
     width: 100%;
     justify-content: flex-start;
     font-size: 16px;
     padding: 15px 20px;
-    color:  var(--ocean-light);
+    color: var(--ocean-light);
   }
-  .nav-links.active .active{
-    color:  var(--coral-light);
+  .nav-links.active .active {
+    color: var(--coral-light);
   }
   .nav-container {
     padding: 15px 20px;
@@ -545,7 +572,6 @@ nav.scrolled .nav-links a {
   .nav-links a span {
     display: inline;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -558,5 +584,49 @@ nav.scrolled .nav-links a {
     width: 55px;
     height: 55px;
   }
+}
+/* Agregar estos estilos a tu archivo 3-navigation.css */
 
+/* Botón especial de Booking en el Navbar */
+.booking-nav-item {
+  margin-left: 1rem;
+}
+
+.booking-btn {
+  padding: 0.6rem 1.5rem !important;
+  background: rgba(255, 107, 157, 0.1);
+  border: 1px solid rgba(255, 107, 157, 0.3);
+  color: var(--text-nav);
+  font-weight: 600 !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 3px 10px var(--shadow-color);
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+}
+
+.booking-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px var(--shadow-color);
+  background: linear-gradient(135deg, var(--coral-pink), var(--coral-light));
+  border-color: var(--coral-pink);
+}
+
+.booking-btn i {
+  font-size: 1rem;
+}
+
+/* Responsive ajustments */
+@media (max-width: 768px) {
+  .booking-nav-item {
+    margin-left: 0;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .booking-btn {
+    display: inline-flex !important;
+    width: auto !important;
+    justify-content: center;
+  }
 }
