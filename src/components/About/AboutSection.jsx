@@ -11,14 +11,15 @@ import {
 } from "lucide-react";
 import photo from "../../assets/About/2.jpg";
 import TechCarousel from "./TechCarousel";
-import { downloadCV } from "../../helpers";
+import { downloadCV, getExperience } from "../../helpers";
+import { projects } from "../../data/projects";
 
 const AboutSection = () => {
   const { t } = useLanguage();
 
   const stats = [
-    { number: "50+", label: t("about_stat_projects") },
-    { number: "5+", label: t("about_stat_years") },
+    { number: projects?.length + "+", label: t("about_stat_projects") },
+    { number: `${getExperience()}+`, label: t("about_stat_years") },
     { number: "15+", label: t("about_stat_clients") },
     { number: "100%", label: t("about_stat_satisfaction") },
   ];
@@ -128,15 +129,15 @@ const AboutSection = () => {
 
             {/* CTA Button */}
             <div className="about-cta">
-                <a
-                  href="https://www.linkedin.com/in/fersy-mart%C3%ADnez-b49b11262/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="cta-primary"
-                >
-                  {" "}
-                  {t("about_cta_contact")}
-                </a>
+              <a
+                href="https://www.linkedin.com/in/fersy-mart%C3%ADnez-b49b11262/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cta-primary"
+              >
+                {" "}
+                {t("about_cta_contact")}
+              </a>
               <button className="cta-secondary" onClick={downloadCV}>
                 {t("about_cta_download")}
               </button>

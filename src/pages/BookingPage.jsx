@@ -116,7 +116,7 @@ const BookingPage = () => {
         <div className="container">
           <h3>{t("booking_prefer_email")}</h3>
           <p>{t("booking_email_text")}</p>
-          <a href="https://wa.me/50498240913" className="btn-primary">
+          <a href="https://wa.me/50498240913" className="cta-button">
             <i className="fas fa-envelope"></i>
             {t("booking_contact_button")}
           </a>

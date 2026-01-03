@@ -3,6 +3,7 @@ export const projects = [
   {
     id: "tsc-portal",
     slug: "tribunal-superior-cuentas",
+    featured: true,
     title: {
       es: "Portal Web del Tribunal Superior de Cuentas",
       en: "Superior Court of Audits Web Portal",
@@ -148,12 +149,13 @@ export const projects = [
         "The modernized portal significantly improved user experience when accessing public documents, meeting governmental transparency objectives. The site continues to operate stably, supporting concurrent access from multiple users nationwide.",
       ],
     },
-    prevProject: "/project/go-consultores",
-    nextProject: "/project/copa-y-queso",
+    prevProject: "/project/api-node",
+    nextProject: "/project/sipmer-seduc",
   },
   {
     id: "sipmer-seduc",
     slug: "sipmer-seduc",
+    featured: true,
     title: {
       es: "SIPMER - Sistema de Planificación SEDUC",
       en: "SIPMER - SEDUC Planning System",
@@ -265,12 +267,13 @@ export const projects = [
         "Significant reduction in strategic report generation time.",
       ],
     },
-    prevProject: "/project/copa-y-queso",
-    nextProject: "/project/tribunal-superior-cuentas",
+    prevProject: "/project/tribunal-superior-cuentas",
+    nextProject: "/project/copa-y-queso",
   },
   {
     id: "copa-y-queso",
     slug: "copa-y-queso",
+    featured: false,
     title: {
       es: "Copa y Queso - Marketplace y Club de Vinos",
       en: "Copa y Queso - Marketplace and Wine Club",
@@ -281,7 +284,7 @@ export const projects = [
     },
     category: "ecommerce",
     tags: ["WooCommerce", "API REST", "IA", "Subscripciones", "PHP Custom"],
-    year: 2023,
+    year: 2025,
     client: {
       es: "Copa y Queso",
       en: "Copa y Queso",
@@ -443,6 +446,7 @@ export const projects = [
   {
     id: "go-consultores",
     slug: "go-consultores",
+    featured: true,
     title: {
       es: "Go Consultores - Sitio Corporativo",
       en: "Go Consultores - Corporate Site",
@@ -493,7 +497,7 @@ export const projects = [
             en: "Presentation video of the Business AI Assistant product",
           },
         },
-         {
+        {
           url: "https://www.youtube.com/watch?v=hjnuJa1RiU0",
           title: {
             es: "Video de presentación del producto de Facturación Electrónica",
@@ -615,7 +619,142 @@ export const projects = [
         "Cohesive visual identity achieved through strategic curation of visual resources and brand color adaptation.",
       ],
     },
-    prevProject: "/project/tribunal-superior-cuentas",
-    nextProject: "/project/sipmer-seduc",
+    prevProject: "/project/copa-y-queso",
+    nextProject: "/project/api-node",
+  },
+  {
+    id: "api-node",
+    slug: "api-node",
+    featured: false,
+    title: {
+      es: "API REST Versionada para Gestión de Proyectos",
+      en: "Versioned REST API for Project Management",
+    },
+    intro: {
+      es: "API REST robusta y escalable construida con Node.js y Express para la gestión integral de proyectos, etapas, proveedores, equipos y empleados, con arquitectura versionada y validación avanzada de datos.",
+      en: "Robust and scalable REST API built with Node.js and Express for comprehensive management of projects, phases, suppliers, teams and employees, with versioned architecture and advanced data validation.",
+    },
+    category: "backend",
+    tags: ["Node.js", "Express", "REST API", "MSSQL", "Joi"],
+    year: 2023,
+    client: {
+      es: "Proyecto para empresa Constructora",
+      en: "Project for Constructor Business",
+    },
+    role: {
+      es: "Desarrolladora Backend",
+      en: "Backend Developer",
+    },
+    technologies: [
+      "Node.js",
+      "Express.js",
+      "MSSQL",
+      "Joi",
+      "SQL Server",
+      "REST API",
+      "CORS",
+    ],
+    images: {
+      main: "/portfolio/images/projects/apinode/main.png",
+    },
+    media: {
+      iframe: null,
+      videos: [],
+    },
+    relatedCode: {
+      repositories: [
+        {
+          label: {
+            es: "Repositorio en GitHub",
+            en: "GitHub Repository",
+          },
+          url: "https://github.com/fersycode/api_node",
+          status: "available",
+        },
+      ],
+    },
+    links: null,
+    description: {
+      es: [
+        "Esta API REST fue desarrollada para proporcionar una solución backend robusta y escalable para la gestión de proyectos empresariales. El sistema permite administrar de manera eficiente proyectos, sus etapas, proveedores asociados, equipos de trabajo y empleados, todo a través de una interfaz programática estandarizada.",
+        "La arquitectura implementa un sistema de versionado de API (actualmente v1) que facilita la evolución del sistema sin romper compatibilidad con clientes existentes. Cada endpoint está diseñado siguiendo las mejores prácticas de REST, con validación exhaustiva de datos de entrada mediante el esquema Joi y manejo centralizado de errores para garantizar respuestas consistentes.",
+        "El proyecto utiliza SQL Server como base de datos, implementando consultas preparadas para prevenir vulnerabilidades de SQL injection y optimizar el rendimiento. La estructura modular del código separa claramente controladores, rutas, validadores y configuración de base de datos, facilitando el mantenimiento y la escalabilidad del sistema.",
+      ],
+      en: [
+        "This REST API was developed to provide a robust and scalable backend solution for enterprise project management. The system efficiently manages projects, their phases, associated suppliers, work teams, and employees, all through a standardized programmatic interface.",
+        "The architecture implements an API versioning system (currently v1) that facilitates system evolution without breaking compatibility with existing clients. Each endpoint is designed following REST best practices, with exhaustive input data validation using Joi schema and centralized error handling to ensure consistent responses.",
+        "The project uses SQL Server as the database, implementing prepared statements to prevent SQL injection vulnerabilities and optimize performance. The modular code structure clearly separates controllers, routes, validators, and database configuration, facilitating system maintenance and scalability.",
+      ],
+    },
+    challenges: {
+      es: [
+        "Diseñar una arquitectura de API escalable y preparada para evolucionar sin romper compatibilidad con versiones anteriores",
+        "Implementar un sistema robusto de validación de datos que proteja contra entradas maliciosas y errores de usuario",
+        "Garantizar la seguridad de las consultas SQL y prevenir vulnerabilidades de inyección",
+        "Crear un sistema de manejo de errores centralizado que proporcione información útil sin exponer detalles sensibles del sistema",
+        "Estructurar el código de manera modular para facilitar el mantenimiento y la adición de nuevas funcionalidades",
+        "Establecer estándares de respuesta consistentes para todos los endpoints de la API",
+      ],
+      en: [
+        "Design a scalable API architecture prepared to evolve without breaking backward compatibility",
+        "Implement a robust data validation system that protects against malicious inputs and user errors",
+        "Ensure SQL query security and prevent injection vulnerabilities",
+        "Create a centralized error handling system that provides useful information without exposing sensitive system details",
+        "Structure code modularly to facilitate maintenance and addition of new functionalities",
+        "Establish consistent response standards for all API endpoints",
+      ],
+    },
+    solutions: {
+      es: [
+        "Implementación de versionado de API en las URLs (v1) para permitir evolución controlada del sistema y mantener compatibilidad con clientes existentes",
+        "Utilización de Joi para validación exhaustiva de query parameters, tipos de datos, longitudes de string y valores permitidos, con mensajes de error descriptivos",
+        "Uso de parámetros preparados en todas las consultas SQL para prevenir inyección y garantizar la seguridad de los datos",
+        "Desarrollo de middleware de manejo de errores centralizado que diferencia entre entornos de desarrollo y producción para no exponer información sensible",
+        "Estructura modular con separación clara: controladores base, rutas versionadas, validadores independientes y configuración de base de datos aislada",
+        "Estandarización de respuestas JSON con estructura consistente (success, data, count) para facilitar el consumo por clientes",
+        "Configuración de CORS y logging de requests para mejorar la trazabilidad y depuración",
+        "Sanitización automática de datos de entrada para prevenir ataques XSS y garantizar la integridad de la información",
+      ],
+      en: [
+        "Implementation of API versioning in URLs (v1) to allow controlled system evolution and maintain compatibility with existing clients",
+        "Use of Joi for exhaustive validation of query parameters, data types, string lengths, and allowed values, with descriptive error messages",
+        "Use of prepared statements in all SQL queries to prevent injection and ensure data security",
+        "Development of centralized error handling middleware that differentiates between development and production environments to avoid exposing sensitive information",
+        "Modular structure with clear separation: base controllers, versioned routes, independent validators, and isolated database configuration",
+        "Standardization of JSON responses with consistent structure (success, data, count) to facilitate consumption by clients",
+        "CORS configuration and request logging to improve traceability and debugging",
+        "Automatic sanitization of input data to prevent XSS attacks and ensure information integrity",
+      ],
+    },
+    resultsCards: [
+      {
+        value: "5",
+        label: { es: "Endpoints principales", en: "Main endpoints" },
+      },
+      {
+        value: "v1",
+        label: { es: "Versión de API activa", en: "Active API version" },
+      },
+      {
+        value: "100%",
+        label: { es: "Validación de datos", en: "Data validation coverage" },
+      },
+      {
+        value: { es: "Modular", en: "Modular" },
+        label: { es: "Arquitectura del código", en: "Code architecture" },
+      },
+    ],
+    results: {
+      es: [
+        "La API proporciona una base sólida y escalable para la gestión de proyectos empresariales, con una arquitectura que facilita la adición de nuevas funcionalidades sin comprometer la estabilidad del sistema. El sistema de versionado permite evolucionar la API de manera controlada, mientras que la validación exhaustiva garantiza la integridad de los datos.",
+        "La estructura modular del código facilita significativamente el mantenimiento y la colaboración en equipo. La implementación de seguridad mediante consultas preparadas y la validación con Joi protege efectivamente contra las vulnerabilidades más comunes. El proyecto establece una base técnica sólida lista para incorporar mejoras como autenticación JWT, rate limiting, tests automatizados y documentación con Swagger.",
+      ],
+      en: [
+        "The API provides a solid and scalable foundation for enterprise project management, with an architecture that facilitates adding new functionalities without compromising system stability. The versioning system allows controlled API evolution, while exhaustive validation ensures data integrity.",
+        "The modular code structure significantly facilitates maintenance and team collaboration. Security implementation through prepared statements and Joi validation effectively protects against the most common vulnerabilities. The project establishes a solid technical foundation ready to incorporate improvements such as JWT authentication, rate limiting, automated tests, and Swagger documentation.",
+      ],
+    },
+    prevProject: "/project/go-consultores",
+    nextProject: "/project/tribunal-superior-cuentas",
   },
 ];

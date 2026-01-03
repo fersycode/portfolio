@@ -57,51 +57,54 @@ const ProjectDetail = () => {
                 ))}
               </ul>
             </div>
+            {project?.links && (
+              <div className="info-block">
+                <h3>{t("project_links")}</h3>
+                {project.links?.site && (
+                  <a
+                    href={project.links.site}
+                    className="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fas fa-external-link-alt"></i>
+                    <span>{t("project_view_site")}</span>
+                  </a>
+                )}
+                {project.links?.reference && (
+                  <a
+                    href={project.links.reference}
+                    className="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fas fa-link"></i>
+                    <span>{t("project_reference")}</span>
+                  </a>
+                )}
+                {project.links?.repository && (
+                  <a
+                    href={project.links.repository}
+                    className="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-github"></i>
+                    <span>{t("project_repository")}</span>
+                  </a>
+                )}
+              </div>
+            )}
 
-            <div className="info-block">
-              <h3>{t("project_links")}</h3>
-              {project.links.site && (
-                <a
-                  href={project.links.site}
-                  className="project-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fas fa-external-link-alt"></i>
-                  <span>{t("project_view_site")}</span>
-                </a>
-              )}
-              {project.links.reference && (
-                <a
-                  href={project.links.reference}
-                  className="project-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fas fa-link"></i>
-                  <span>{t("project_reference")}</span>
-                </a>
-              )}
-              {project.links.repository && (
-                <a
-                  href={project.links.repository}
-                  className="project-link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fab fa-github"></i>
-                  <span>{t("project_repository")}</span>
-                </a>
-              )}
-            </div>
             {project.relatedCode &&
               project.relatedCode.repositories.length > 0 && (
                 <div className="info-block">
                   <h3>{t("project_related_code")}</h3>
                   {project.relatedCode.repositories.map((repo, idx) => (
-                    <div key={idx} className="project-link">
+                    <div key={idx}>
                       {repo.status === "available" ? (
                         <a
+                          className="project-link"
                           href={repo.url}
                           target="_blank"
                           rel="noopener noreferrer"
@@ -148,7 +151,6 @@ const ProjectDetail = () => {
                   <iframe
                     src={project.media.iframe}
                     title={getText(project.title)}
-                    frameBorder="0"
                     allowFullScreen
                   />
                 </div>
@@ -170,7 +172,6 @@ const ProjectDetail = () => {
                         allowFullScreen
                         sandbox="allow-scripts allow-same-origin"
                         loading="lazy"
-                        style="width: 100%; height: 500px; border: none;"
                       />
                     </div>
                   ))}

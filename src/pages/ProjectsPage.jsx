@@ -197,7 +197,7 @@ const ProjectsPage = () => {
                         <i className="fas fa-arrow-right"></i>{" "}
                         {t("project_details")}
                       </Link>
-                      {project.links.site && (
+                      {project.links?.site && (
                         <a
                           href={project.links.site}
                           target="_blank"

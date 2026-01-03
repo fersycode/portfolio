@@ -1,6 +1,7 @@
 // src/components/Contact/ContactSection.jsx
 import { useLanguage } from "../../context/LanguageContext";
-import { downloadCV } from "../../helpers";
+import { projects } from "../../data/projects";
+import { downloadCV, getExperience } from "../../helpers";
 
 const ContactSection = () => {
   const { t } = useLanguage();
@@ -110,11 +111,11 @@ const ContactSection = () => {
             <div className="stats-card">
               <div className="stats-grid">
                 <div className="stat-item">
-                  <span className="stat-number">5+</span>
+                  <span className="stat-number">{getExperience()}+</span>
                   <span className="stat-label">{t("contact_stat_years")}</span>
                 </div>
                 <div className="stat-item">
-                  <span className="stat-number">25+</span>
+                  <span className="stat-number">{projects?.length + "+"}</span>
                   <span className="stat-label">
                     {t("contact_stat_projects")}
                   </span>
