@@ -23,7 +23,7 @@ export const translations = {
     // Personal Info
     about_role: "Desarrolladora Full Stack",
     about_description1:
-      "Soy una desarrolladora especializado en crear experiencias digitales modernas y funcionales. Con más de 5 años de experiencia, he trabajado con empresas de diversos sectores ayudándolas a alcanzar sus objetivos mediante soluciones tecnológicas innovadoras.",
+      "Soy una desarrolladora especializado en crear experiencias digitales modernas y funcionales. Con más de 4 años de experiencia, he trabajado con empresas de diversos sectores ayudándolas a alcanzar sus objetivos mediante soluciones tecnológicas innovadoras.",
     about_description2:
       "Mi enfoque se centra en escribir código limpio, escalable y mantenible, siempre buscando las mejores prácticas y las tecnologías más actuales para entregar productos de alta calidad que superen las expectativas del cliente.",
 
@@ -74,7 +74,7 @@ export const translations = {
     experience_title: "Experiencia Profesional",
     exp_job1_title: "Full Stack Developer & Tech Lead",
     exp_job1_company: "GO CONSULTORES",
-    exp_job1_period: "2023 - Presente",
+    exp_job1_period: "2023 - 2026",
     exp_job1_desc1:
       "SIPMER - Secretaría de Educación (SEDUC): Desarrollo de sistema con arquitectura de microfrontends usando React.js para planificación, monitoreo y evaluación orientado a resultados.",
     exp_job1_desc2:
@@ -87,7 +87,7 @@ export const translations = {
       "Gestión integral de proyectos desde análisis de requerimientos, diseño UX/UI, desarrollo, hasta deployment y mantenimiento.",
     exp_job2_title: "Desarrolladora Frontend",
     exp_job2_company: "APPLAND",
-    exp_job2_period: "2021 - 2023",
+    exp_job2_period: "2022 - 2023",
     exp_job2_desc1: "Desarrollo de aplicaciones web con React.js y Next.js",
     exp_job2_desc2:
       "Desarrollo de aplicaciones móviles con React Native para iOS y Android, colaborando en la app de Espresso Americano",
@@ -193,6 +193,7 @@ export const translations = {
     footer_certifications: "Certificaciones:",
     footer_cert1: "✓ DevOps Essentials - CertiProf (2024)",
     footer_cert2: "✓ Scrum Team Member - ISI (2023)",
+    footer_cert3: "✓ Web & Mobile Designer: UI/UX - Zero to Master Academy (2026) ",
 
     // Side Menu
     side_menu_title: "Contacto Rápido",
@@ -315,7 +316,7 @@ export const translations = {
     // Personal Info
     about_role: "Full Stack Developer",
     about_description1:
-      "I'm a full stack developer specialized in creating modern and functional digital experiences. With over 5 years of experience, I've worked with companies across various sectors helping them achieve their goals through innovative technological solutions.",
+      "I'm a full stack developer specialized in creating modern and functional digital experiences. With over 4 years of experience, I've worked with companies across various sectors helping them achieve their goals through innovative technological solutions.",
     about_description2:
       "My approach focuses on writing clean, scalable, and maintainable code, always seeking best practices and current technologies to deliver high-quality products that exceed client expectations.",
 
@@ -329,7 +330,7 @@ export const translations = {
     about_education: "Education",
     about_education_value: "Systems Engineering",
     about_experience: "Experience",
-    about_experience_value: "5+ Years",
+    about_experience_value: "4+ Years",
     about_location: "Location",
     about_location_value: "Tegucigalpa, Honduras",
     about_passion: "Specialization",
@@ -366,7 +367,7 @@ export const translations = {
     experience_title: "Professional Experience",
     exp_job1_title: "Full Stack Developer & Tech Lead",
     exp_job1_company: "GO CONSULTORES",
-    exp_job1_period: "2023 - Present",
+    exp_job1_period: "2023 - 2026",
     exp_job1_desc1:
       "SIPMER - Ministry of Education (SEDUC): System development with microfrontend architecture using React.js for results-based planning, monitoring and evaluation.",
     exp_job1_desc2:
@@ -379,7 +380,7 @@ export const translations = {
       "Comprehensive project management from requirements analysis, UX/UI design, development, to deployment and maintenance.",
     exp_job2_title: "Frontend Developer",
     exp_job2_company: "APPLAND",
-    exp_job2_period: "2021 - 2023",
+    exp_job2_period: "2022 - 2023",
     exp_job2_desc1: "Web application development with React.js and Next.js",
     exp_job2_desc2:
       "Mobile application development with React Native for iOS and Android, collaborating on Espresso Americano app",
@@ -485,6 +486,7 @@ export const translations = {
     footer_certifications: "Certifications:",
     footer_cert1: "✓ DevOps Essentials - CertiProf (2024)",
     footer_cert2: "✓ Scrum Team Member - ISI (2023)",
+    footer_cert3: "✓ Web & Mobile Designer: UI/UX - Zero to Master Academy (2026) ",
 
     // Side Menu
     side_menu_title: "Quick Contact",

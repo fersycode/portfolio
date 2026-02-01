@@ -12,10 +12,10 @@ const SkillsGrid = () => {
       icon: 'fas fa-laptop-code',
       title: t('skill_cat1'),
       skills: [
-        { name: 'React.js / Next.js', progress: 90 },
-        { name: 'TypeScript / JavaScript', progress: 90 },
+        { name: 'React.js / Next.js', progress: 95 },
+        { name: 'TypeScript / JavaScript', progress: 100 },
         { name: 'Angular', progress: 90 },
-        { name: 'Bootstrap / Tailwind', progress: 90 }
+        { name: 'Bootstrap / Tailwind', progress: 95 }
       ]
     },
     {
@@ -23,7 +23,7 @@ const SkillsGrid = () => {
       icon: 'fas fa-palette',
       title: t('skill_cat2'),
       skills: [
-        { name: 'Figma', progress: 80 },
+        { name: 'Figma', progress: 95 },
         { name: 'UI/UX Design', progress: 90 },
         { name: 'Brand Design', progress: 70 },
         { name: 'Video Editing', progress: 70 }
@@ -46,8 +46,8 @@ const SkillsGrid = () => {
       title: t('skill_cat4'),
       skills: [
         { name: 'React Native', progress: 85 },
-        { name: 'Node.js / REST APIs', progress: 70 },
-        { name: 'MySQL / Firebase', progress: 70 },
+        { name: 'Node.js / REST APIs', progress: 90 },
+        { name: 'MySQL / Firebase', progress: 80 },
         { name: 'iOS / Android Deploy', progress: 90 }
       ]
     },
@@ -56,10 +56,10 @@ const SkillsGrid = () => {
       icon: 'fas fa-cloud',
       title: t('skill_cat5'),
       skills: [
-        { name: 'Git / GitHub / Bitbucket', progress: 90 },
-        { name: 'AWS EC2 / Firebase', progress: 40 },
+        { name: 'Git / GitHub / Bitbucket', progress: 95 },
+        { name: 'AWS EC2 / Firebase', progress: 70 },
         { name: 'Vercel / Netlify', progress: 90 },
-        { name: 'PM2 / IIS', progress: 60 }
+        { name: 'PM2 / IIS', progress: 80 }
       ]
     }
   ];

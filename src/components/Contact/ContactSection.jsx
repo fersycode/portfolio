@@ -155,6 +155,7 @@ const ContactSection = () => {
             </p>
             <p>{t("footer_cert1")}</p>
             <p>{t("footer_cert2")}</p>
+            <p>{t("footer_cert3")}</p>
           </div>
         </div>
         <div className="footer-bottom">
